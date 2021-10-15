@@ -1,0 +1,13 @@
+.Contact-Card-Container {
+    display: flex;
+    flex-direction: row;
+    width: 261px;
+    height: 64px;
+
+    .right-side {
+        span {
+            display: inline-block;
+            width: 100%;
+        }
+    }
+}
