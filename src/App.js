@@ -7,6 +7,7 @@ import {
   Redirect
 } from "react-router-dom";
 import Contacts from './Components/Contacts';
+import PickContacts from './Components/Pick-Contacts';
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
           <Route path="/contacts">
             <Contacts />
           </Route>
-          <Route path="/users">
-            {/*  */}
+          <Route path="/pick-people/:id">
+            <PickContacts />
           </Route>
           <Redirect from="/" to="/contacts" />
         </Switch>

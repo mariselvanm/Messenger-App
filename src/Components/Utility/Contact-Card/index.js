@@ -1,9 +1,9 @@
 import React from "react";
 import './style.scss';
 
-export default function ContactCard({name}) {
+export default function ContactCard({name, select, id, isSelected = null}) {
     return(
-        <div className="Contact-Card-Container">
+        <div className={`Contact-Card-Container ${isSelected ? "select-card": ""}`} onClick={() => select(id)}>
             <div className="left-side">
                 I
             </div>
